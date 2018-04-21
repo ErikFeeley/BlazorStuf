@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using LanguageExt;
+using System;
 
 namespace BlazorTest.Shared
 {
-    public class WeatherForecast
+    public class WeatherForecast : Record<WeatherForecast>
     {
         public DateTime Date { get; set; }
         public int TemperatureC { get; set; }
